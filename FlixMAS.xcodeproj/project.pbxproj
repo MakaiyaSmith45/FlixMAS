@@ -14,9 +14,11 @@
 		617A4C4323FCC97800072F48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 617A4C4223FCC97800072F48 /* Assets.xcassets */; };
 		617A4C4623FCC97800072F48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617A4C4423FCC97800072F48 /* LaunchScreen.storyboard */; };
 		61A5968E23FF70FB0069FF98 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5968D23FF70FB0069FF98 /* MovieCell.swift */; };
+		8AFCA4A3955530E017B4A7A9 /* Pods_FlixMAS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F49E2FD79201CCB48E6F22 /* Pods_FlixMAS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		584579058E053EC1E90733AF /* Pods-FlixMAS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixMAS.release.xcconfig"; path = "Target Support Files/Pods-FlixMAS/Pods-FlixMAS.release.xcconfig"; sourceTree = "<group>"; };
 		617A4C3623FCC8FB00072F48 /* FlixMAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlixMAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		617A4C3923FCC8FB00072F48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		617A4C3B23FCC8FB00072F48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		617A4C4523FCC97800072F48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		617A4C4723FCC97800072F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61A5968D23FF70FB0069FF98 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		9D3200452B194C12C8D0EAB0 /* Pods-FlixMAS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixMAS.debug.xcconfig"; path = "Target Support Files/Pods-FlixMAS/Pods-FlixMAS.debug.xcconfig"; sourceTree = "<group>"; };
+		A1F49E2FD79201CCB48E6F22 /* Pods_FlixMAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixMAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFCA4A3955530E017B4A7A9 /* Pods_FlixMAS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28306772709668574E5EC314 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D3200452B194C12C8D0EAB0 /* Pods-FlixMAS.debug.xcconfig */,
+				584579058E053EC1E90733AF /* Pods-FlixMAS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		617A4C2D23FCC8FA00072F48 = {
 			isa = PBXGroup;
 			children = (
 				617A4C3823FCC8FB00072F48 /* FlixMAS */,
 				617A4C3723FCC8FB00072F48 /* Products */,
+				28306772709668574E5EC314 /* Pods */,
+				D8764EA2D82EDE18B4F1B6C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +87,14 @@
 			path = FlixMAS;
 			sourceTree = "<group>";
 		};
+		D8764EA2D82EDE18B4F1B6C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1F49E2FD79201CCB48E6F22 /* Pods_FlixMAS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 617A4C4A23FCC97800072F48 /* Build configuration list for PBXNativeTarget "FlixMAS" */;
 			buildPhases = (
+				5856C388947EB45657995D5E /* [CP] Check Pods Manifest.lock */,
 				617A4C3223FCC8FB00072F48 /* Sources */,
 				617A4C3323FCC8FB00072F48 /* Frameworks */,
 				617A4C3423FCC8FB00072F48 /* Resources */,
+				D8EE4216EBB0B7C2299AD9B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5856C388947EB45657995D5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlixMAS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8EE4216EBB0B7C2299AD9B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixMAS/Pods-FlixMAS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixMAS/Pods-FlixMAS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlixMAS/Pods-FlixMAS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		617A4C3223FCC8FB00072F48 /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		617A4C4B23FCC97800072F48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D3200452B194C12C8D0EAB0 /* Pods-FlixMAS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +373,7 @@
 		};
 		617A4C4C23FCC97800072F48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584579058E053EC1E90733AF /* Pods-FlixMAS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
